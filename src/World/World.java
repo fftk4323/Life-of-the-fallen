@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package World;
 
 
@@ -32,11 +29,7 @@ import com.jme3.scene.shape.Box;
 import com.jme3.texture.Texture;
 import java.util.Random;
 
-/**
- * Example 9 - How to make walls and floors solid.
- * This collision code uses Physics and a custom Action Listener.
- * @author normen, with edits by Zathras
- */
+//Test Class for getting basic world gen and physics down. Uses the Basic compents of the Jmonkey Main frame.
 public class World extends SimpleApplication
         implements ActionListener {
 
@@ -47,7 +40,7 @@ public class World extends SimpleApplication
   private CharacterControl player;
   private Vector3f walkDirection = new Vector3f();
   private boolean left = false, right = false, up = false, down = false;
-  //private Spatial tree;
+ 
   
   //Temporary vectors used on each frame.
   //They here to avoid instanciating new vectors on each frame
