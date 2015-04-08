@@ -108,6 +108,7 @@ public class World extends SimpleApplication
              ground.collideWith(ray, results); 
              
              if (results.size() > 0) {  
+              if(results.getCollision.getMaterialName()== "Grass"){
                 dist = results.getClosestCollision().getDistance();
                     Tree = assetManager.loadModel("tree/tree.scene");
            
@@ -116,7 +117,7 @@ public class World extends SimpleApplication
                    Tree.setLocalTranslation(loc);
                    
                       rootNode.attachChild(Tree);
-                      
+              }
          }
              else {
                    System.out.println("No Hit");
